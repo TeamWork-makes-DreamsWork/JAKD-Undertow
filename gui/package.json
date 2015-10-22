@@ -1,0 +1,27 @@
+{
+  "name": "jakd-undertow",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha",
+    "start": "browser-sync start --server --files='*.html,css/*.css,js/*.js'",
+    "sass": "node-sass src/scss/main.scss src/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamWork-makes-DreamsWork/JAKD-Undertow.git"
+  },
+  "author": "Jasmine Baik and Kristine Erickson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TeamWork-makes-DreamsWork/JAKD-Undertow/issues"
+  },
+  "homepage": "https://github.com/TeamWork-makes-DreamsWork/JAKD-Undertow#readme",
+  "dependencies": {
+    "browser-sync": "^2.9.11",
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3",
+    "node-sass": "^3.3.3"
+  }
+}
