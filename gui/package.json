@@ -1,0 +1,19 @@
+{
+  "name": "jakd-undertow",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamWork-makes-DreamsWork/JAKD-Undertow.git"
+  },
+  "author": "Jasmine Baik and Kristine Erickson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TeamWork-makes-DreamsWork/JAKD-Undertow/issues"
+  },
+  "homepage": "https://github.com/TeamWork-makes-DreamsWork/JAKD-Undertow#readme"
+}
