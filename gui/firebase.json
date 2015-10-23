@@ -1,0 +1,9 @@
+{
+  "firebase": "jakd-undertow",
+  "public": "src",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
