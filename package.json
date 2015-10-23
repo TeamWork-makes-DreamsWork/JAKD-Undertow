@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "mocha",
-    "start": "browser-sync start --server --files='*.html,css/*.css,js/*.js'",
+    "start": "browser-sync start --server --directory --files='src/*.html, src/main.css'",
     "sass": "node-sass src/scss/main.scss src/css/main.css"
   },
   "repository": {
