@@ -9,8 +9,9 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+        <!-- endbower -->
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -20,11 +21,17 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <main class="container">
+          <header>
+            <h1>JAKD</h1>
+          </header>
+
+        </main>
 
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <!-- bower:js -->
         <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/angular/angular-route.js"></script>
         <!-- endbower -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
