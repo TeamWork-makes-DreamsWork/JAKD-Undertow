@@ -1,6 +1,6 @@
 {
   "firebase": "jakd-undertow",
-  "public": "src",
+  "public": "dist",
   "ignore": [
     "firebase.json",
     "**/.*",
