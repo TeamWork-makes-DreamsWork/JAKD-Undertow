@@ -24,6 +24,7 @@
     "angular": "~1.4.7",
     "jquery": "~2.1.4",
     "modernizer": "~2.8.2",
-    "normalize-css": "normalize.css#~3.0.3"
+    "normalize-css": "normalize.css#~3.0.3",
+    "angular-route": "~1.4.7"
   }
 }
