@@ -1,3 +1,8 @@
+$('.q-vote > a[href] > i').on('click', function(){
+  $('i').removeClass('active');
+  $(this).addClass('active');
+});
+
 $('.home-page-tabs > a').on('click', function(){
   var panelId = $(this).attr('href');
 
@@ -8,11 +13,6 @@ $('.home-page-tabs > a').on('click', function(){
 
   }).filter('[href="#home"]')
     .trigger('click');
-
-$('.q-vote > a[href] > i').on('click', function(){
-  $('i').removeClass('active');
-  $(this).addClass('active');
-});
 
 ;(function(){ // START IIFE
   angular.module("jakd-undertow", ['ngRoute'])
