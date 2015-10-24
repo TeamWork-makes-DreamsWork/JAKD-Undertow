@@ -10,6 +10,20 @@ body {
     header {
       margin-left: auto;
       margin-right: auto;
+
+      .home-header {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .login-header {
+        float: right;
+        text-decoration: none;
+        color: inherit;
+      }
+      .login-header:hover {
+        text-decoration: underline;
+      }
     }
 
     .home-page-tabs {
@@ -41,6 +55,9 @@ body {
 
           h3 > a[href] {
             color: black;
+          }
+          h3 > a[href]:hover {
+            text-decoration: underline;
           }
           p {
             position: absolute;
