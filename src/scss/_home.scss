@@ -53,6 +53,13 @@ body {
         li.q-vote {
           padding: 5px;
           margin-right: 10px;
+
+          i.fa-arrow-up.active{
+            color: orange;
+          }
+          i.fa-arrow-down.active{
+            color: dodgerblue;
+          }
         }
 
         li {
