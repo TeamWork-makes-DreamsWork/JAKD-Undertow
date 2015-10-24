@@ -42,6 +42,9 @@ body {
           h3 > a[href] {
             color: black;
           }
+          p {
+            position: absolute;
+          }
           a[href] {
             text-decoration: none;
             color: gray;
@@ -49,5 +52,34 @@ body {
         } // END li
       } //END popular-questions
     } // END home-page-questions
+    #question-form {
+      width: 90%;
+
+      label.q-title, textarea, .q-post {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      label.q-title > input {
+        width: 80%;
+        padding: 5px 0;
+      }
+
+      textarea {
+        width: 80%;
+        height: 200px;
+        margin-left: 37px;
+      }
+
+      button.q-post {
+        margin-left: 37px;
+        border: solid 0;
+        color: white;
+      }
+
+    } // END question-form
   }
+}
+*, *:after, *:before {
+  box-sizing: border-box;
 }
