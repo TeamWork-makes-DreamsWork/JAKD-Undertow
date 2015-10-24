@@ -33,7 +33,7 @@
           </nav>
           <section id="home" class="home-page-questions panel active">
             <h2>Popular Questions</h2>
-            <ul class="popular-questions">
+            <ul class="popular-questions" ng-repeat="question in questions">
               <li class="q-vote">
                 <a href="#{{up_vote}}"><i class="fa fa-arrow-up fa-fw fa-lg"></i></a>
                 <p>{{vote_count}}</p>
@@ -41,7 +41,7 @@
               </li>
               <li class="q-title">
                 <h3>
-                  <a href="#{{answer_page_url}}">{{title}}</a>
+                  <a href="#{{answer_page_url}}">{{question.title}}</a>
                 </h3>
                 <p>Submitted by {{name}}</p>
               </li>

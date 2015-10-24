@@ -16,6 +16,12 @@ $('.q-vote > a[href] > i').on('click', function(){
 
 ;(function(){ // START IIFE
   angular.module("jakd-undertow", ['ngRoute'])
-    
+
+    .run(function($http, $rootScope){
+      $http.get('/apis/questions.json')
+        .then(function(response){
+          $rootScope.questions = response.data;
+        });
+    }) // END run function
   ; // END MODULE
 })(); // END IIFE
