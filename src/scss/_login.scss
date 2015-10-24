@@ -1,0 +1,71 @@
+.container {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  float: left;
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: KasseFLF;
+  color: #192430;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  font-family: KasseFLF;
+  color: #192430;
+  font-size: 18pt;
+  padding-left: 15px; padding-right: 15px; padding-bottom: 5px;
+  border: 1px solid #6B8FB2;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.tabs.active {
+  border-bottom-color: white;
+}
+
+.panels {
+  display: none;
+}
+
+.panels.active {
+  border: 1px solid #6B8FB2;
+  margin-top: 4px;
+  padding: 20px;
+  display: inherit;
+}
+
+label {
+  font-family: KasseFLF;
+  font-size: 13pt;
+  padding: 10px;
+}
+
+input {
+  margin-top: 15px; margin-bottom: 15px;
+  padding: 5px;
+}
+
+#password {
+  margin-left: 34px;
+}
+
+#new_password {
+  margin-left: 78px;
+}
+
+#new_email {
+  margin-left: 44px;
+}
+
+button {
+  margin-left: 8px; margin-top: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  background-color: #6B8FB2;
+  border-style: none;
+}
