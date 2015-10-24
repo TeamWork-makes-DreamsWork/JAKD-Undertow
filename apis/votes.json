@@ -1,0 +1,38 @@
+[
+    {
+        "question_id": 1,
+        "answer_id": 1,
+        "member_id": 2,
+        "vote": false
+    },
+    {
+        "question_id": 1,
+        "answer_id": 1,
+        "member_id": 3,
+        "vote": true
+    },
+    {
+        "question_id": 2,
+        "answer_id": 2,
+        "member_id": 1,
+        "vote": false
+    },
+    {
+        "question_id": 2,
+        "answer_id": 2,
+        "member_id": 3,
+        "vote": true
+    },
+    {
+        "question_id": 3,
+        "answer_id": 3,
+        "member_id": 1,
+        "vote": false
+    },
+    {
+        "question_id": 3,
+        "answer_id": 3,
+        "member_id": 2,
+        "vote": true
+    }
+]

@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "member_id": 1,
+        "title": "Wow to bake a cake?",
+        "description": "I have apologies to make. Help me.",
+        "answers": [
+            {
+                "member_id": 1,
+                "question_id": 1,
+                "accepted_answer": true,
+                "answer_text": "Yes, you can do that but dont forget to add milk on it!"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "member_id": 2,
+        "title": "Why are my hands stuck together?",
+        "description": "I don't know what happened but I need it undone.",
+        "answers": [
+            {
+                "member_id": 2,
+                "question_id": 2,
+                "accepted_answer": false,
+                "answer_text": "I would push the cats off the wall first then buy some dogs."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "member_id": 3,
+        "title": "Who framed roger rabbit?",
+        "description": "is this movie biographical?",
+        "answers": [
+            {
+                "member_id": 3,
+                "question_id": 3,
+                "accepted_answer": true,
+                "answer_text": "No! Never give up on your Dreams unless the are nightmares!"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "member_id": 4,
+        "title": "Do you even lift bro?",
+        "description": "I like to workout every day!",
+        "answers": [
+            {
+                "member_id": 4,
+                "question_id": 4,
+                "accepted_answer": true,
+                "answer_text": "Yes, but what bro doesn't!?"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "member_id": 5,
+        "title": "Can you travel to China in on a bike from America?",
+        "description": "I love my bike and dont want to travel without it.",
+        "answers": [
+            {
+                "member_id": 5,
+                "question_id": 5,
+                "accepted_answer": false,
+                "answer_text": "Yes, you and your bike can do anything your heart desires."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "member_id": 6,
+        "title": "Is swimming good for the soul?",
+        "description": "I want to swim more but is it good for the soul?",
+        "answers": [
+            {
+                "member_id": 6,
+                "question_id": 6,
+                "accepted_answer": true,
+                "answer_text": "Yes, Bruce Lee says we should be water, Bruce Lee is good for the soul, therefor water is good for the soul."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "member_id": 7,
+        "title": "Did Star Wars actually happen and are we now watching history?",
+        "description": "Blows my mind!",
+        "answers": [
+            {
+                "member_id": 7,
+                "question_id": 7,
+                "accepted_answer": true,
+                "answer_text": "Yes, what we watch is just an interpretation of actual history, some fact have been lost through time."
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "member_id": 8,
+        "title": "Do you have to have cats to be a cat lady?",
+        "description": "I want to be a cat lady but don't want cats.",
+        "answers": [
+            {
+                "member_id": 8,
+                "question_id": 8,
+                "accepted_answer": false,
+                "answer_text": "Yes, by definition, you must have cats."
+            }
+        ]
+    }
+]
