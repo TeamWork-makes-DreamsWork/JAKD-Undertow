@@ -9,6 +9,7 @@ $('.home-page-tabs > a').on('click', function(){
   }).filter('[href="#home"]')
     .trigger('click');
 
-$('li > a[href] > i').on('click', function(){
-  $(this).addClass('active').siblings().removeClass('active');
+$('.q-vote > a[href] > i').on('click', function(){
+  $('i').removeClass('active');
+  $(this).addClass('active');
 });
