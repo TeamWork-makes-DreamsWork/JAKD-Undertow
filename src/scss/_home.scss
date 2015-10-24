@@ -50,6 +50,11 @@ body {
         list-style-type: none;
         border-bottom: 1px solid gray;
 
+        li.q-vote {
+          padding: 5px;
+          margin-right: 10px;
+        }
+
         li {
           display: inline-block;
 
@@ -58,9 +63,6 @@ body {
           }
           h3 > a[href]:hover {
             text-decoration: underline;
-          }
-          p {
-            // position: absolute;
           }
           a[href] {
             text-decoration: none;

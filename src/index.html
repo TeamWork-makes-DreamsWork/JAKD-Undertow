@@ -34,20 +34,20 @@
           <section id="home" class="home-page-questions panel active">
             <h2>Popular Questions</h2>
             <ul class="popular-questions">
-              <li class="q-votes">
-                <a href="#{{total_votes}}">{{total_votes}} votes</a>
-              </li>
-              <li class="q-answers">
-                <a href="#{{answer_page_url}}">{{total_answers}} answers</a>
+              <li class="q-vote">
+                <a href="#{{up_vote}}"><i class="fa fa-arrow-up fa-fw fa-lg"></i></a>
+                <p>{{vote_count}}</p>
+                <a href="#{{down_vote}}"><i class="fa fa-arrow-down fa-fw fa-lg"></i></a>
               </li>
               <li class="q-title">
                 <h3>
                   <a href="#{{answer_page_url}}">{{question_title}}</a>
                 </h3>
-              </li>
-              <li class="q-member-id">
                 <p>{{member_id}}</p>
               </li>
+              <!-- <li class="q-member-id">
+                <p>{{member_id}}</p>
+              </li> -->
             </ul>
           </section>
           <form id="question-form" class="panel" action="{{home_page}}" method="post">
