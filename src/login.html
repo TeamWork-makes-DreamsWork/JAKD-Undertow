@@ -12,7 +12,7 @@
         <!-- bower:css -->
         <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
         <!-- endbower -->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/_login.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -24,17 +24,36 @@
         <main class="container">
           <header>
             <h1>JAKD</h1>
+            <nav>
+              <a href="#login" class="tabs active">login</a>
+              <a href="#signup" class="tabs">signup</a>
+            </nav>
           </header>
-
+          <section class="panels active" id="login">
+            <label for="email">email address</label>
+	  					<input type="text" id="email" name="login_email" placeholder="example@email.com"></input><br>
+            <label for="password">password</label>
+              <input type="text" id="password" name="login_password" placeholder="password"></input><br>
+            <button class="login_btn">login</button>
+          </section>
+          <section class="panels" id="signup">
+            <label for="new_email">email address</label>
+              <input type="text" id="new_email" name="signup_email" placeholder="example@email.com"></input><br>
+            <label for="new_password">password</label>
+              <input type="text" id="new_password" name="signup_password" placeholder="password"></input><br>
+            <label for="comfirm_password">confirm password</label>
+              <input type="text" id="confirm_password" name="confirm_password" placeholder="confirm password"></input><br>
+            <button class="register_btn">register</button>
+          </section>
         </main>
 
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <!-- bower:js -->
         <script src="../bower_components/angular/angular.js"></script>
-        <script src="../bower_components/angular/angular-route.js"></script>
+        <script src="../bower_components/angular-route/angular-route.js"></script>
         <!-- endbower -->
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/login.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
