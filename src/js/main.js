@@ -1,8 +1,3 @@
-$('.q-vote > a[href] > i').on('click', function(){
-  $('i').removeClass('active');
-  $(this).addClass('active');
-});
-
 $('.home-page-tabs > a').on('click', function(){
   var panelId = $(this).attr('href');
 
@@ -14,14 +9,27 @@ $('.home-page-tabs > a').on('click', function(){
   }).filter('[href="#home"]')
     .trigger('click');
 
+$('.q-vote > a[href] > i').on('click', function(){
+  $('i').removeClass('active');
+  $(this).addClass('active');
+});
+
 ;(function(){ // START IIFE
   angular.module("jakd-undertow", ['ngRoute'])
 
-    .run(function($http, $rootScope){
-      $http.get('/apis/questions.json')
+  .run(function($http, $rootScope){
+    $http.get('/apis/questions.json')
+      .then(function(response){
+        $rootScope.questions = response.data;
+      });
+    }) // END run function (questions)
+
+    .run(function($http, $rootScope) {
+      $http.get('/apis/members.json')
         .then(function(response){
-          $rootScope.questions = response.data;
+          $rootScope.member = response.data;
         });
-    }) // END run function
+    }) // END RUN FUNCTION (member)
+
   ; // END MODULE
 })(); // END IIFE
