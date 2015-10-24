@@ -90,11 +90,18 @@ body {
 
       button.q-post {
         margin-left: 37px;
-        border: solid 0;
-        color: white;
       }
 
     } // END question-form
+
+    .panel {
+      display: none;
+
+      &.active {
+        display: inherit;
+      }
+
+    } // END panels
   }
 }
 *, *:after, *:before {
