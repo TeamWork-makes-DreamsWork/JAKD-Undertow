@@ -1,3 +1,31 @@
 body {
-  color: blue;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  main.container{
+    max-width: 60em;
+    margin: 0 auto;
+
+    header {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .home-page-tabs {
+      border-bottom: 1px solid lightgray;
+      padding: 0.5em 2em;
+
+      a[href] {
+        padding: 1ex 2em;
+        position: relative;
+        bottom: -2px;
+
+        &.active {
+          border: 1px solid lightgray;
+          border-bottom-color: white;
+        }
+      }
+    }
+  }
 }
