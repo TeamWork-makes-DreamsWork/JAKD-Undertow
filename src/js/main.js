@@ -13,3 +13,9 @@ $('.q-vote > a[href] > i').on('click', function(){
   $('i').removeClass('active');
   $(this).addClass('active');
 });
+
+;(function(){ // START IIFE
+  angular.module("jakd-undertow", ['ngRoute'])
+    
+  ; // END MODULE
+})(); // END IIFE
