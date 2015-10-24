@@ -60,7 +60,7 @@ body {
             text-decoration: underline;
           }
           p {
-            position: absolute;
+            // position: absolute;
           }
           a[href] {
             text-decoration: none;
@@ -71,6 +71,9 @@ body {
     } // END home-page-questions
     #question-form {
       width: 90%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 30px;
 
       label.q-title, textarea, .q-post {
         display: block;
@@ -100,7 +103,6 @@ body {
       &.active {
         display: inherit;
       }
-
     } // END panels
   }
 }
