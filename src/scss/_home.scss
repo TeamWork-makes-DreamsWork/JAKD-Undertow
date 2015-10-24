@@ -20,10 +20,13 @@ body {
         padding: 1ex 2em;
         position: relative;
         bottom: -2px;
+        text-decoration: none;
+        color: gray;
 
         &.active {
           border: 1px solid lightgray;
           border-bottom-color: white;
+          border-top: 2px solid gray;
         }
       }
     }
