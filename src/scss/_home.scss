@@ -76,6 +76,10 @@ body {
             color: gray;
           }
         } // END li
+        li.q-title p {
+            color: gray;
+            font-size: 10px;
+        }
       } //END popular-questions
     } // END home-page-questions
     #question-form {
