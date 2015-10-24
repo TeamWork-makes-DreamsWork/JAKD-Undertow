@@ -29,6 +29,25 @@ body {
           border-top: 2px solid gray;
         }
       }
-    }
+    } // END home-page-tabs
+
+    .home-page-questions {
+      ul.popular-questions{
+        list-style-type: none;
+        border-bottom: 1px solid gray;
+
+        li {
+          display: inline-block;
+
+          h3 > a[href] {
+            color: black;
+          }
+          a[href] {
+            text-decoration: none;
+            color: gray;
+          }
+        } // END li
+      } //END popular-questions
+    } // END home-page-questions
   }
 }
