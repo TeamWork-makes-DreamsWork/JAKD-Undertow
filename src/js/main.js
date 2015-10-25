@@ -36,6 +36,9 @@ $('.q-vote > a[href] > i').on('click', function(){
       })
       .when('/answers', {
         templateUrl: 'answers.html'
+      })
+      .when('/ask', {
+        templateUrl: 'ask.html'
       });
   })
 
