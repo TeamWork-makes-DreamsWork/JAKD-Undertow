@@ -44,7 +44,7 @@ $('.q-vote > a[href] > i').on('click', function(){
 
 
   .run(function($http, $rootScope){
-    $http.get('/apis/questions.json')
+    $http.get('//jakd.herokuapp.com/questions.json')
       .then(function(response){
         $rootScope.questions = response.data;
       });
@@ -60,3 +60,5 @@ $('.q-vote > a[href] > i').on('click', function(){
 
   ; // END MODULE
 })(); // END IIFE
+
+// /apis/questions.json
