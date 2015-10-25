@@ -52,7 +52,8 @@ $('.q-vote > a[href] > i').on('click', function(){
     }) // END run function (questions)
 
     .run(function($http, $rootScope) { // TODO: make work
-      $http.get('/apis/members.json')
+      $http.get('https://jakd.herokuapp.com/members.json')
+      // $http.get('/apis/members.json')
         .then(function(response){
           $rootScope.member = response.data;
         });
