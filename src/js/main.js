@@ -14,15 +14,25 @@ $('.q-vote > a[href] > i').on('click', function(){
   $(this).addClass('active');
 });
 
+
+
 ;(function(){ // START IIFE
   angular.module("jakd-undertow", ['ngRoute'], function($routeProvider){
-    .controller('loginController', function($scope){
-      $routeProvider
-        .when('/login', {
-
-        })
-    });
+    $routeProvider
+      .when('/', {
+        templateUrl: 'home.html'
+      })
+      .when('/home', {
+        templateUrl: 'home.html'
+      })
+      .when('/login', {
+        templateUrl: 'login.html'
+      })
+      .when('/questions', {
+        templateUrl: 'questions.html'
+      });
   })
+
 
   .run(function($http, $rootScope){
     $http.get('/apis/questions.json')
