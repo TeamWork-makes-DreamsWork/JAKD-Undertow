@@ -15,7 +15,13 @@ $('.q-vote > a[href] > i').on('click', function(){
 });
 
 ;(function(){ // START IIFE
-  angular.module("jakd-undertow", ['ngRoute'])
+  angular.module("jakd-undertow", ['ngRoute'], function($routeProvider){
+    $routeProvider
+      .when('/', {
+
+      })
+  })
+
 
   .run(function($http, $rootScope){
     $http.get('/apis/questions.json')
@@ -24,12 +30,13 @@ $('.q-vote > a[href] > i').on('click', function(){
       });
     }) // END run function (questions)
 
-    .run(function($http, $rootScope) {
+    .run(function($http, $rootScope) { // TODO: make work
       $http.get('/apis/members.json')
         .then(function(response){
           $rootScope.member = response.data;
         });
     }) // END RUN FUNCTION (member)
+
 
   ; // END MODULE
 })(); // END IIFE
