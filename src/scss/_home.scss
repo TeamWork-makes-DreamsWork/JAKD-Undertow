@@ -3,28 +3,28 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  main.container{
+  header {
     max-width: 60em;
     margin: 0 auto;
 
-    header {
-      margin-left: auto;
-      margin-right: auto;
-
-      .home-header {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      .login-header {
-        float: right;
-        text-decoration: none;
-        color: inherit;
-      }
-      .login-header:hover {
-        text-decoration: underline;
-      }
+    .home-header {
+      text-decoration: none;
+      color: inherit;
     }
+
+    .login-header {
+      float: right;
+      text-decoration: none;
+      color: inherit;
+    }
+    .login-header:hover {
+      text-decoration: underline;
+    }
+  }
+
+  main.container{
+    max-width: 60em;
+    margin: 0 auto;
 
     .home-page-tabs {
       border-bottom: 1px solid lightgray;
