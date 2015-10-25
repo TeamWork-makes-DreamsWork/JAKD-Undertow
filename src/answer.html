@@ -22,11 +22,27 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <main class="container">
+        <main class="thread_container">
           <header>
             <h1>JAKD</h1>
           </header>
-
+          <ul class="thread_question" ng-repeat="question in questions">
+            <li class="q-vote">
+              <a href="#" class="thread_upvote"><i class="fa fa-arrow-up fa-fw fa-lg"></i></a>
+              <p class="thread_vote">{{vote_count}}</p>
+              <a href="#" class="thread_downvote"><i class="fa fa-arrow-down fa-fw fa-lg"></i></a>
+            </li>
+            <li class="q-title">
+              <h3>
+                <a href="#answer" class="thread_question">{{question.title}}</a>
+              </h3>
+              <p>Submitted by {{member.name}}</p>
+            </li>
+          </ul>
+        </section>
+        <form id="question-form" class="panel active" action="{{home_page}}" method="post">
+          <textarea name="comments" placeholder="Comment here" class="comments"></textarea><br>
+          <button class="thread_comment" type="submit">Submit</button>
         </main>
 
         <script src="../bower_components/jquery/dist/jquery.js"></script>
