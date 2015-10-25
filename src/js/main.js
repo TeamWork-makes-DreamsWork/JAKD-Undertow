@@ -61,7 +61,7 @@ $('.q-vote > a[href] > i').on('click', function(){
 
     .controller("SignupController", function($scope, $http){
       $scope.signup = {
-        // name: "",
+        name: "",
         email: "",
         password_digest: ""
       };
