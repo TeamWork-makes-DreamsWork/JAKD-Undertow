@@ -1,0 +1,50 @@
+.thread_container {
+  width: 80%;
+  margin-left: 5%;
+}
+
+.q-vote, .q-title {
+  list-style: none;
+}
+
+.q-vote {
+  width: 15%;
+  margin-right: 2%;
+}
+
+.q-title {
+  width: 70%;
+  float: left;
+}
+
+.thread_upvote, .thread_downvote {
+  margin-left: 5px;
+}
+
+.thread_downvote {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.thread_question {
+  border: none;
+  text-decoration: underline;
+}
+
+.thread_vote {
+  width: 15%;
+  margin-left: 0; margin-top: 2ex; margin-bottom: 2ex;
+}
+
+.comments {
+  margin: 40px; margin-bottom: 0;
+  height: 200px;
+  width: 500px;
+}
+
+.thread_comment {
+  float: left;
+  margin-left: 40px;
+}
