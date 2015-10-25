@@ -42,7 +42,7 @@ $('.q-vote > a[href] > i').on('click', function(){
       });
   })
 
-
+  // .controller("AskController", function($sco))
   .run(function($http, $rootScope){
     $http.get('https://jakd.herokuapp.com/questions.json')
     // $http.get('/apis/questions.json')
@@ -58,6 +58,22 @@ $('.q-vote > a[href] > i').on('click', function(){
           $rootScope.member = response.data;
         });
     }) // END RUN FUNCTION (member)
+
+    .controller("LoginController", function($scope, $http){
+      $scope.signup = {
+        name: "",
+        email: "",
+        password: ""
+      };
+
+      $scope.newUser = function(){
+        $http.post('https://jakd.herokuapp.com/members.json', $scope.signup)
+          .then(function(response){
+          console.log('hello', response);
+        });
+      };
+    }) // END LoginController
+
 
 
   ; // END MODULE
