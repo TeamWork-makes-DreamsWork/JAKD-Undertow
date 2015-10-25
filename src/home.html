@@ -1,18 +1,18 @@
 <nav class="home-page-tabs">
   <a href="#home" class="home-tab active">Home</a>
-  <a href="#question-form" class="ask-tab">Ask</a>
+  <a href="#ask" class="ask-tab">Ask</a>
 </nav>
 <section id="home" class="home-page-questions panel active">
   <h2>Popular Questions</h2>
   <ul class="popular-questions" ng-repeat="question in questions">
     <li class="q-vote">
-      <a href="#{{up_vote}}"><i class="fa fa-arrow-up fa-fw fa-lg"></i></a>
+      <a href="#"><i class="fa fa-arrow-up fa-fw fa-lg"></i></a>
       <p>{{vote_count}}</p>
-      <a href="#{{down_vote}}"><i class="fa fa-arrow-down fa-fw fa-lg"></i></a>
+      <a href="#"><i class="fa fa-arrow-down fa-fw fa-lg"></i></a>
     </li>
     <li class="q-title">
       <h3>
-        <a href="#{{answer_page_url}}">{{question.title}}</a>
+        <a href="#answer">{{question.title}}</a>
       </h3>
       <p>Submitted by {{member.name}}</p>
     </li>

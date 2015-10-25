@@ -28,8 +28,14 @@ $('.q-vote > a[href] > i').on('click', function(){
       .when('/login', {
         templateUrl: 'login.html'
       })
+      .when('/sign-up', {
+        templateUrl: 'signup.html'
+      })
       .when('/questions', {
         templateUrl: 'questions.html'
+      })
+      .when('/answers', {
+        templateUrl: 'answers.html'
       });
   })
 
