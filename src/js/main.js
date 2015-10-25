@@ -16,12 +16,13 @@ $('.q-vote > a[href] > i').on('click', function(){
 
 ;(function(){ // START IIFE
   angular.module("jakd-undertow", ['ngRoute'], function($routeProvider){
-    $routeProvider
-      .when('/', {
+    .controller('loginController', function($scope){
+      $routeProvider
+        .when('/login', {
 
-      })
+        })
+    });
   })
-
 
   .run(function($http, $rootScope){
     $http.get('/apis/questions.json')
