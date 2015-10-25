@@ -22,39 +22,20 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <main class="container" ng-app="jakd-undertow">
-          <header>
-            <h1><a class="home-header" href="#{{home_url}}">JAKD</a></h1>
-            <a class="login-header" href="{{login_page_url}}">login</a>
-          </header>
-          <nav class="home-page-tabs">
-            <a href="#home" class="home-tab active">Home</a>
-            <a href="#question-form" class="ask-tab">Ask</a>
+        <header>
+          <h1><a class="home-header" href="#/home">JAKD</a></h1>
+          <nav class="header-tabs">
+            <a class="home-nav-header" href="#/home">home</a>
+            <a class="login-header" href="#/login">login</a>
+            <a class="sign-up-header" href="#/sign-up">sign-up</a>
+            <a class="ask-header" href="#/ask">ask</a>
           </nav>
-          <section id="home" class="home-page-questions panel active">
-            <h2>Popular Questions</h2>
-            <ul class="popular-questions" ng-repeat="question in questions">
-              <li class="q-vote">
-                <a href="#{{up_vote}}"><i class="fa fa-arrow-up fa-fw fa-lg"></i></a>
-                <p>{{vote_count}}</p>
-                <a href="#{{down_vote}}"><i class="fa fa-arrow-down fa-fw fa-lg"></i></a>
-              </li>
-              <li class="q-title">
-                <h3>
-                  <a href="#{{answer_page_url}}">{{question.title}}</a>
-                </h3>
-                <p>Submitted by {{name}}</p>
-              </li>
-              <!-- <li class="q-member-id">
-                <p>{{member_id}}</p>
-              </li> -->
-            </ul>
-          </section>
-          <form id="question-form" class="panel" action="{{home_page}}" method="post">
-            <label class="q-title"><b>Title </b><input type="text" name="title" maxlength="400" placeholder="Ask away..." /></label>
-            <textarea name="comments" placeholder="Explain yourself..."></textarea>
-            <button class="q-post" type="submit">Post question</button>
-          </form>
+        </header>
+
+        <!-- MAIN CONTENT AND INJECTED VIEWS -->
+        <main class="container" ng-app="jakd-undertow">
+          <ng-view />
+
         </main>
 
         <script src="../bower_components/jquery/dist/jquery.js"></script>

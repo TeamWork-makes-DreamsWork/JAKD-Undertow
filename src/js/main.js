@@ -1,8 +1,3 @@
-$('.q-vote > a[href] > i').on('click', function(){
-  $('i').removeClass('active');
-  $(this).addClass('active');
-});
-
 $('.home-page-tabs > a').on('click', function(){
   var panelId = $(this).attr('href');
 
@@ -14,14 +9,55 @@ $('.home-page-tabs > a').on('click', function(){
   }).filter('[href="#home"]')
     .trigger('click');
 
-;(function(){ // START IIFE
-  angular.module("jakd-undertow", ['ngRoute'])
+$('.q-vote > a[href] > i').on('click', function(){
+  $('i').removeClass('active');
+  $(this).addClass('active');
+});
 
-    .run(function($http, $rootScope){
-      $http.get('/apis/questions.json')
+
+
+;(function(){ // START IIFE
+  angular.module("jakd-undertow", ['ngRoute'], function($routeProvider){
+    $routeProvider
+      .when('/', {
+        templateUrl: 'home.html'
+      })
+      .when('/home', {
+        templateUrl: 'home.html'
+      })
+      .when('/login', {
+        templateUrl: 'login.html'
+      })
+      .when('/sign-up', {
+        templateUrl: 'signup.html'
+      })
+      .when('/questions', {
+        templateUrl: 'questions.html'
+      })
+      .when('/answers', {
+        templateUrl: 'answers.html'
+      })
+      .when('/ask', {
+        templateUrl: 'ask.html'
+      });
+  })
+
+
+  .run(function($http, $rootScope){
+    $http.get('https://jakd.herokuapp.com/questions')
+    // $http.get('/apis/questions.json')
+      .then(function(response){
+        $rootScope.questions = response.data;
+      });
+    }) // END run function (questions)
+
+    .run(function($http, $rootScope) { // TODO: make work
+      $http.get('/apis/members.json')
         .then(function(response){
-          $rootScope.questions = response.data;
+          $rootScope.member = response.data;
         });
-    }) // END run function
+    }) // END RUN FUNCTION (member)
+
+
   ; // END MODULE
 })(); // END IIFE

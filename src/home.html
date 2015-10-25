@@ -1,0 +1,25 @@
+<nav class="home-page-tabs">
+  <a href="#home" class="home-tab active">Home</a>
+  <a href="#ask" class="ask-tab">Ask</a>
+</nav>
+<section id="home" class="home-page-questions panel active">
+  <h2>Popular Questions</h2>
+  <ul class="popular-questions" ng-repeat="question in questions">
+    <li class="q-vote">
+      <a href="#"><i class="fa fa-arrow-up fa-fw fa-lg"></i></a>
+      <p>{{vote_count}}</p>
+      <a href="#"><i class="fa fa-arrow-down fa-fw fa-lg"></i></a>
+    </li>
+    <li class="q-title">
+      <h3>
+        <a href="#answer">{{question.title}}</a>
+      </h3>
+      <p>Submitted by {{member.name}}</p>
+    </li>
+  </ul>
+</section>
+<form id="question-form" class="panel" action="{{home_page}}" method="post">
+  <label class="q-title"><b>Title </b><input type="text" name="title" maxlength="400" placeholder="Ask away..." /></label>
+  <textarea name="comments" placeholder="Explain yourself..."></textarea>
+  <button class="q-post" type="submit">Post question</button>
+</form>
