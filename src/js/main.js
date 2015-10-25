@@ -28,7 +28,7 @@ $('.q-vote > a[href] > i').on('click', function(){
       .when('/login', {
         templateUrl: 'login.html'
       })
-      .when('/sign-up', {
+      .when('/signup', {
         templateUrl: 'signup.html'
       })
       .when('/questions', {
@@ -44,7 +44,7 @@ $('.q-vote > a[href] > i').on('click', function(){
 
 
   .run(function($http, $rootScope){
-    $http.get('https://jakd.herokuapp.com/questions')
+    $http.get('https://jakd.herokuapp.com/questions.json')
     // $http.get('/apis/questions.json')
       .then(function(response){
         $rootScope.questions = response.data;
@@ -52,7 +52,8 @@ $('.q-vote > a[href] > i').on('click', function(){
     }) // END run function (questions)
 
     .run(function($http, $rootScope) { // TODO: make work
-      $http.get('/apis/members.json')
+      $http.get('https://jakd.herokuapp.com/members.json')
+      // $http.get('/apis/members.json')
         .then(function(response){
           $rootScope.member = response.data;
         });
