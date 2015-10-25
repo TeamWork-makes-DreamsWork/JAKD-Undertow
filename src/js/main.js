@@ -59,7 +59,7 @@ $('.q-vote > a[href] > i').on('click', function(){
         });
     }) // END RUN FUNCTION (member)
 
-    .controller("LoginController", function($scope, $http){
+    .controller("SignupController", function($scope, $http){
       $scope.signup = {
         name: "",
         email: "",
