@@ -34,8 +34,8 @@ $('.q-vote > a[href] > i').on('click', function(){
       .when('/questions', {
         templateUrl: 'questions.html'
       })
-      .when('/answers', {
-        templateUrl: 'answers.html'
+      .when('/answer', {
+        templateUrl: 'answer.html'
       })
       .when('/ask', {
         templateUrl: 'ask.html'
@@ -59,17 +59,17 @@ $('.q-vote > a[href] > i').on('click', function(){
         });
     }) // END RUN FUNCTION (member)
 
-    .controller("LoginController", function($scope, $http){
+    .controller("SignupController", function($scope, $http){
       $scope.signup = {
         name: "",
         email: "",
-        password: ""
+        password_digest: ""
       };
 
       $scope.newUser = function(){
         $http.post('https://jakd.herokuapp.com/members.json', $scope.signup)
           .then(function(response){
-          console.log('hello', response);
+            console.log("hello", response);
         });
       };
     }) // END LoginController
