@@ -10,9 +10,14 @@
     </h3>
     <p>Submitted by {{member.name}}</p>
   </li>
-  <li class="answers">
-    <h3>Answers</h3>
-      
+  <h3>Answers</h3>
+  <li class="answers" ng-repeat="answers in questions">
+    <a href="#" class="thread_upvote"><i class="fa fa-arrow-up fa-fw fa-lg"></i></a>
+    <p class="thread_vote">{{vote_count}}</p>
+    <a href="#" class="thread_downvote"><i class="fa fa-arrow-down fa-fw fa-lg"></i></a>
+  </li>
+  <li>
+    <p>{{answers.answer_text}}</p>
   </li>
 </ul>
 </section>
