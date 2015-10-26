@@ -1,0 +1,26 @@
+<nav>
+  <a href="#login" class="tabs">login</a>
+  <a href="#signup" class="tabs active">signup</a>
+</nav>
+<section class="panels" id="login">
+  <form class="login-form">
+    <label for="email">email address</label>
+			<input type="text" id="email" name="login_email" placeholder="example@email.com"></input><br>
+    <label for="password">password</label>
+      <input type="text" id="password" name="login_password" placeholder="password"></input><br>
+    <button class="login_btn" type="submit">login</button>
+  </form>
+</section>
+<section class="panels active" id="signup">
+  <form class="register-form" ng-submit="newUser()">
+    <label for="name">name</label>
+      <input type="text" id="user_name" name="name" placeholder="first and last..." ng-model="signup.name"></input><br>
+    <label for="new_email">email address</label>
+      <input type="text" id="new_email" name="email" placeholder="example@email.com" ng-model="signup.email"></input><br>
+    <label for="new_password">password</label>
+      <input type="text" id="new_password" name="password" placeholder="password" ng-model="signup.password_digest"></input><br>
+    <label for="comfirm_password">confirm password</label>
+      <input type="text" id="confirm_password" name="confirm_password" placeholder="confirm password"></input><br>
+    <button class="register_btn" type="submit">register</button>
+  </form>
+</section>
