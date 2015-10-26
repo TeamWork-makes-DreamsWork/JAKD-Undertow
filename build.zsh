@@ -6,6 +6,9 @@ echo 'Step 1: Copy all the HTML'
 cp src/index.html dist/
 cp src/login.html dist/
 cp src/answer.html dist/
+cp src/ask.html dist/
+cp src/home.html dist/
+cp src/signup.html dist/
 # mkdir dist/partials/
 # cp -r src/partials dist/
 
